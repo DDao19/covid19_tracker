@@ -22,8 +22,8 @@ const CountryPicker = ({ handleCountryChange }) => {
 
 
   return (
-    <FormControl className={styles.formControl}>
-      <Typography color="textSecondary" align="center" variant="h5">Please Select A Country</Typography>
+    <FormControl className={styles.formControl} margin="normal">
+      <Typography color="textPrimary" align="center" variant="h5">Please Select A Country</Typography>
       <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
         <option value="">Global</option>
         {globalCountries}
